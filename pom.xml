@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.alesandro</groupId>
-    <artifactId>Ejercicio32-1</artifactId>
+    <artifactId>Ejercicio3_2-1</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>Ejercicio32-1</name>
 
@@ -73,7 +73,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.alesandro.ejercicio321/com.alesandro.ejercicio321.PaisesApplication
+                            <mainClass>com.alesandro.ejercicio321/com.alesandro.ejercicio3_21.PaisesApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

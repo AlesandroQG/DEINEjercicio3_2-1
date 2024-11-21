@@ -1,13 +1,14 @@
-module com.alesandro.ejercicio321 {
+module com.alesandro.ejercicio3_21 {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
+    requires net.sf.jasperreports.core;
 
 
-    opens com.alesandro.ejercicio321 to javafx.fxml;
-    exports com.alesandro.ejercicio321;
-    exports com.alesandro.ejercicio321.controller;
-    opens com.alesandro.ejercicio321.controller to javafx.fxml;
-    exports com.alesandro.ejercicio321.db;
-    opens com.alesandro.ejercicio321.db to javafx.fxml;
+    opens com.alesandro.ejercicio3_21 to javafx.fxml;
+    exports com.alesandro.ejercicio3_21;
+    exports com.alesandro.ejercicio3_21.controller;
+    opens com.alesandro.ejercicio3_21.controller to javafx.fxml;
+    exports com.alesandro.ejercicio3_21.db;
+    opens com.alesandro.ejercicio3_21.db to javafx.fxml;
 }

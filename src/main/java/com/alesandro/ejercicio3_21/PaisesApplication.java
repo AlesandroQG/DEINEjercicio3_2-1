@@ -1,4 +1,4 @@
-package com.alesandro.ejercicio321;
+package com.alesandro.ejercicio3_21;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -22,7 +22,7 @@ public class PaisesApplication extends Application {
      */
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(PaisesApplication.class.getResource("fxml/paises.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(PaisesApplication.class.getResource("fxml/Paises.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("PAÍSES");
         stage.setScene(scene);

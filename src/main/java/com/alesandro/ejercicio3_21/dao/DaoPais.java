@@ -1,17 +1,19 @@
-package com.alesandro.ejercicio321.dao;
+package com.alesandro.ejercicio3_21.dao;
 
-import com.alesandro.ejercicio321.db.DBConnect;
-import com.alesandro.ejercicio321.model.Pais;
+import com.alesandro.ejercicio3_21.db.DBConnect;
+import com.alesandro.ejercicio3_21.model.Pais;
 
-import java.sql.Blob;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.HashMap;
 
+/**
+ * Dao del objeto País
+ */
 public class DaoPais {
     /**
-     * Metodo que carga los datos de la tabla País y los devuelve para usarlos en un mapa
+     * Función que carga los datos de la tabla País y los devuelve para usarlos en un mapa
      *
      * @return mapa de país para cargar en un informe
      */
