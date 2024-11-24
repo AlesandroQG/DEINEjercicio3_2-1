@@ -3,6 +3,7 @@ package com.alesandro.ejercicio3_21.controller;
 import com.alesandro.ejercicio3_21.PaisesApplication;
 import com.alesandro.ejercicio3_21.dao.DaoPais;
 import com.alesandro.ejercicio3_21.db.DBConnect;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -31,7 +32,7 @@ public class PaisesController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        //
+        lanzarInforme(null);
     }
 
     /**
@@ -45,16 +46,18 @@ public class PaisesController implements Initializable {
         try {
             connection = new DBConnect(); // Instanciar la conexión con la base de datos
             HashMap<String, Object> parameters = DaoPais.findAll(); // Cargar todos los países de la base de datos para insertar en el informe
-            JasperReport report = (JasperReport) JRLoader.loadObject(PaisesApplication.class.getResource("reports/Cherry.jasper")); // Obtener el fichero del informe
+            JasperReport report = (JasperReport) JRLoader.loadObject(PaisesApplication.class.getResource("report/Paises.jasper")); // Obtener el fichero del informe
             JasperPrint jprint = JasperFillManager.fillReport(report, parameters, connection.getConnection()); // Cargar el informe con los países
             JasperViewer viewer = new JasperViewer(jprint, false); // Instanciar la vista del informe para mostrar el informe
             viewer.setVisible(true); // Mostrar el informe al usuario
         } catch (JRException e) {
             e.printStackTrace();
             mostrarAlerta("Ha ocurrido un error cargando el informe");
+            Platform.exit(); // Cerrar la aplicación
         } catch (SQLException e) {
             e.printStackTrace();
             mostrarAlerta("Ha ocurrido un erros cargando los países de la base de datos");
+            Platform.exit(); // Cerrar la aplicación
         }
     }
 
