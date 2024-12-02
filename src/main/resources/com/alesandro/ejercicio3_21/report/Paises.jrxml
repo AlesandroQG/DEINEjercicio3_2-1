@@ -35,7 +35,7 @@
 	<background splitType="Stretch"/>
 	<title height="136" splitType="Stretch">
 		<element kind="image" uuid="1c003177-754c-448f-8ce1-16868856f545" x="0" y="0" width="130" height="126" onErrorType="Blank">
-			<expression><![CDATA["naciones.png"]]></expression>
+			<expression><![CDATA["src/main/resources/com/alesandro/ejercicio3_21/images/naciones.png"]]></expression>
 		</element>
 		<element kind="staticText" uuid="bc1ce1da-8232-46ea-be55-cec4abb986dd" x="270" y="0" width="263" height="62" vTextAlign="Middle" style="Title">
 			<text><![CDATA[INFORME]]></text>
@@ -47,7 +47,7 @@
 			<text><![CDATA[En el siguiente informe encontraras un listado de países con información relevante de cada país: nº de habitantes y capital]]></text>
 		</element>
 		<element kind="image" uuid="4aa6f4d1-27dc-4b34-9227-59e19ce2c959" x="643" y="0" width="157" height="136" onErrorType="Blank">
-			<expression><![CDATA["coffee_stain.png"]]></expression>
+			<expression><![CDATA["src/main/resources/com/alesandro/ejercicio3_21/images/coffee_stain.png"]]></expression>
 		</element>
 	</title>
 	<pageHeader splitType="Stretch"/>
