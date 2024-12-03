@@ -4,7 +4,7 @@
 
 Esta es una aplicación hecha con JavaFX y JasperReports que muestra un informe con los países de la base de datos.
 
-JasperReport está compilado en 7.0.1.
+JasperReport está compilado en 7.0.1. La ejecución funciona en VSCode.
 
 #### Estructura
 
